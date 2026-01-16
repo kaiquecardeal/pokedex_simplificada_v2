@@ -1,0 +1,45 @@
+name: pokedex_simplificada_v2
+
+description: "Pokedex em Flutter com arquitetura limpa"
+homepage: https://github.com/kaiquecardeal/pokedex_simplificada_v2
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  dio: ^5.9.0
+  json_annotation: ^4.9.0
+  go_router: ^17.0.1
+  get_it: ^9.2.0
+  result_dart: ^2.1.1
+  result_command: ^2.2.0
+  freezed_annotation: ^3.1.0
+  shimmer: ^3.0.0
+  lottie: ^3.3.2
+  shared_preferences: ^2.5.4
+  cached_network_image: ^3.4.1
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  build_runner: ^2.10.4
+  json_serializable: ^6.11.3
+  provider: ^6.1.5+1
+  mocktail: ^1.0.0
+  freezed: ^3.2.4
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/icon.png
+    - assets/animations/lottie/loading.json
+
