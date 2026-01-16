@@ -26,9 +26,9 @@
 
 ## 🚀 Demonstração
 
-| Listagem Principal | Detalhes & Stats | Comparação Dinâmica |
-|---|---|---|
-| <p align="center"><img src="assets/images/screen_list.png" width="250"></p> | <p align="center"><img src="assets/images/screen_detail.png" width="250"></p> | <p align="center"><img src="assets/images/screen_compare.png" width="250"></p> |
+| <div align="center">Listagem Principal</div> | <div align="center">Detalhes & Stats</div> | <div align="center">Comparação Dinâmica</div> |
+| :---: | :---: | :---: |
+| <img src="assets/images/screen_list.png" width="250"> | <img src="assets/images/screen_detail.png" width="250"> | <img src="assets/images/screen_compare.png" width="250"> |
 
 > 💡 **Dica:** Experimente a busca com autocomplete para encontrar seu Pokémon favorito em milissegundos.
 
