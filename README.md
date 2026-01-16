@@ -1,146 +1,72 @@
 
-
-
-# Pokedex Simplificada v2
+# 📑 Pokedex Simplificada v2
 
 <p align="center">
-	<img src="assets/images/logo_pokedex.png" alt="Logo" width="120"/>
+  <img src="assets/images/logo_pokedex.png" alt="Pokedex Logo" width="160"/>
 </p>
 
 <p align="center">
-	<a href="https://flutter.dev/">
-		<img src="https://img.shields.io/badge/Flutter-3.10%2B-blue?logo=flutter" alt="Flutter"/>
-	</a>
-	<img src="https://img.shields.io/badge/platform-Android%20%7C%20iOS%20%7C%20Web%20%7C%20Desktop-blue" alt="Platform"/>
-	<img src="https://img.shields.io/badge/coverage-100%25-brightgreen" alt="Coverage"/>
-	<img src="https://img.shields.io/badge/tests-passing-brightgreen" alt="Tests Passing"/>
+  <img src="https://img.shields.io/badge/Flutter-3.10+-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter">
+  <img src="https://img.shields.io/badge/Dart-3.0+-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
+  <img src="https://img.shields.io/badge/Platforms-Android%20|%20iOS%20|%20Web%20|%20Desktop-444444?style=for-the-badge" alt="Platforms">
 </p>
 
 <p align="center">
-	<b>Uma Pokedex Flutter multiplataforma, moderna, acessível e de alta performance, consumindo a <a href="https://pokeapi.co/">PokeAPI</a>.</b>
+  <img src="https://img.shields.io/badge/Coverage-100%25-brightgreen?style=flat-square" alt="Coverage">
+  <img src="https://img.shields.io/badge/Tests-Passing-brightgreen?style=flat-square" alt="Tests">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
 </p>
 
 <p align="center">
-	<a href="#demonstração">Demonstração</a> •
-	<a href="#funcionalidades">Funcionalidades</a> •
-	<a href="#arquitetura">Arquitetura</a> •
-	<a href="#instalação-e-execução">Instalação</a> •
-	<a href="#testes">Testes</a> •
-	<a href="#faq">FAQ</a>
+  <b>Uma experiência Pokémon moderna, ultra-rápida e acessível.</b><br>
+  Construída com Flutter, consumindo a <a href="https://pokeapi.co/">PokeAPI</a>, focando em padrões de arquitetura escaláveis e performance.
 </p>
 
 ---
 
-## Sumário
+## 🚀 Demonstração
 
-- [Demonstração](#demonstração)
-- [Funcionalidades](#funcionalidades)
-- [Arquitetura](#arquitetura)
-- [Tecnologias e Pacotes](#tecnologias-e-pacotes)
-- [Diferenciais](#diferenciais)
-- [Instalação e Execução](#instalação-e-execução)
-- [Testes](#testes)
-- [Exemplos de Uso](#exemplos-de-uso)
-- [Comandos Úteis](#comandos-úteis)
-- [Troubleshooting](#troubleshooting)
-- [FAQ](#faq)
-- [Contribuição](#contribuição)
-- [Agradecimentos](#agradecimentos)
-- [Licença](#licença)
+| Listagem Principal | Detalhes & Stats | Comparação Dinâmica |
+|---|---|---|
+| <img src="assets/images/screen_list.png" width="250"> | <img src="assets/images/screen_detail.png" width="250"> | <img src="assets/images/screen_compare.png" width="250"> |
+
+> 💡 **Dica:** Experimente a busca com autocomplete para encontrar seu Pokémon favorito em milissegundos.
 
 ---
 
+## ✨ Funcionalidades Core
 
-## Demonstração
-
-<p align="center">
-  <img src="assets/images/demo_pokedex.gif" alt="Demonstração do app" width="400"/>
-</p>
-
-### Prints de Telas
-
-<p align="center">
-  <img src="assets/images/screen_list.png" alt="Lista de Pokémon" width="200"/>
-  <img src="assets/images/screen_detail.png" alt="Detalhe do Pokémon" width="200"/>
-  <img src="assets/images/screen_compare.png" alt="Comparação de Pokémon" width="200"/>
-</p>
-
-#### Exemplo de fluxo:
-
-1. Buscar Pokémon pelo nome com sugestões automáticas.
-2. Visualizar detalhes completos do Pokémon.
-3. Comparar dois Pokémon lado a lado.
-4. Navegar entre abas e voltar ao topo da lista.
+* 🔍 **Smart Search:** Sistema de busca com sugestões em tempo real.
+* ⚖️ **Versus Mode:** Comparação técnica lado a lado via Deep Links (`/compare?pokemon1=...&pokemon2=...`).
+* 🎨 **Adaptive UI:** Suporte nativo a Dark/Light mode e design responsivo.
+* ♿ **Acessibilidade:** Uso de `Semantics`, navegação por teclado e contraste revisado.
+* ⚡ **Alta Performance:** Lazy loading, cache de imagens e animações suaves.
 
 ---
 
+## 🏗️ Arquitetura e Engenharia
 
-## Funcionalidades
+O projeto segue o padrão **MVVM**, garantindo separação clara entre models, viewmodels e views.
 
-- **Listagem de Pokémon**: Nome, imagem, número e tipos.
-- **Busca com sugestão/autocomplete**: Sugestões em tempo real ao digitar.
-- **Detalhes do Pokémon**: Tela detalhada via rota.
-- **Comparação de Pokémon**: Compare dois Pokémon lado a lado (`/compare?pokemon1=pikachu&pokemon2=charizard`).
-- **Navegação com Bottom Navigation**: Usando `ShellRoute` do go_router.
-- **Botão de voltar ao topo**: Na lista de Pokémon.
-- **Cache de imagens**: Usando `cached_network_image` para performance.
-- **Acessibilidade**: Uso de `Semantics`, navegação por teclado e contraste revisado.
-- **Responsivo**: Suporte a mobile, web e desktop.
-- **Dark/Light Mode**: Suporte completo a temas.
-- **Performance**: Lazy loading, cache e animações suaves.
-
----
-## Tecnologias e Pacotes
-
-| Pacote                | Função principal                        |
-|-----------------------|-----------------------------------------|
-| flutter               | Framework UI                            |
-| dio                   | HTTP requests                           |
-| go_router             | Navegação avançada                      |
-| get_it                | Injeção de dependência                  |
-| result_dart           | Tratamento funcional de erros           |
-| result_command        | Gerenciamento de estado                 |
-| json_serializable     | Serialização de models                  |
-| freezed               | Data classes imutáveis                  |
-| cached_network_image  | Cache de imagens                        |
-| shimmer, lottie       | Animações e loading                     |
-| shared_preferences    | Armazenamento local                     |
-| flutter_lints         | Linting                                 |
+### Stack Tecnológica
+* **Estado:** `result_command` + `CommandBuilder`.
+* **Navegação:** `go_router` com `ShellRoute`.
+* **Injeção de Dependência:** `get_it`.
+* **Dados:** `dio`, `json_serializable` e `freezed`.
 
 ---
 
----
-
-
-## Arquitetura
-
-O projeto segue MVVM, com separação clara entre models, viewmodels, views e data sources.
-
-```
+### Estrutura de Pastas
+```text
 lib/
-├── main.dart                    # Entry point com DI (get_it)
-├── app.dart                     # MyApp widget com MaterialApp.router
-├── core/
-│   ├── di/
-│   ├── network/
-│   ├── router/
-│   └── widgets/
-└── features/
-    ├── pokemon_list/
-    ├── pokemon_detail/
-    └── pokemon_compare/
+├── core/                # Injeção de dependência, rede e router.
+├── features/            # Divisão por funcionalidades.
+│   ├── pokemon_list/
+│   ├── pokemon_detail/
+│   └── pokemon_compare/
+└── main.dart            # Ponto de entrada.
 ```
-
-**Principais padrões:**
-- Injeção de dependência: `get_it`
-- Navegação: `go_router` com `ShellRoute`
-- Gerenciamento de estado: `result_command` + `CommandBuilder`
-- Serialização: `json_serializable`/`freezed`
-
 ---
-
----
-
 
 ## Diferenciais
 
@@ -154,179 +80,45 @@ lib/
 
 ---
 
----
+🛠️ Instalação e Setup
+1. Clonar e Instalar
+Bash
 
-
-## Instalação e Execução
-
-### Pré-requisitos
-- Flutter 3.10+
-- [Dart SDK](https://dart.dev/get-dart)
-
-### Instalação rápida
-
-```bash
-git clone https://github.com/kaiquecardeal/pokedex_simplificada_v2.git
+git clone [https://github.com/kaiquecardeal/pokedex_simplificada_v2.git](https://github.com/kaiquecardeal/pokedex_simplificada_v2.git)
 cd pokedex_simplificada_v2
 flutter pub get
-```
 
-### Build e execução
+2. Geração de Código
+Bash
 
-```bash
-# Gere código (json_serializable/freezed)
 dart run build_runner build --delete-conflicting-outputs
 
-# Rode o app (escolha a plataforma)
-flutter run -d chrome      # Web
-flutter run -d android     # Android
-flutter run -d ios         # iOS
-flutter run -d macos       # macOS
-flutter run -d windows     # Windows
-flutter run -d linux       # Linux
-```
+3. Executar
+Bash
 
-### Build para produção
+flutter run # Selecione a plataforma (Chrome, Android, iOS, Desktop)
 
-```bash
-# Web
-flutter build web
-# Android
-flutter build apk --release
-# iOS
-flutter build ios --release
-# Windows
-flutter build windows --release
-# macOS
-flutter build macos --release
-# Linux
-flutter build linux --release
-```
+🧪 Qualidade de Software
 
----
+Testes unitários e de widget com 100% de cobertura.
+Bash
 
----
-
-
-## Testes
-
-```bash
+# Executar testes
 flutter test
-```
-Testes unitários e de widget estão em `test/`.
 
-> Para cobertura de testes:
-> 
-> ```bash
-> flutter test --coverage
-> genhtml coverage/lcov.info -o coverage/html
-> # Abra coverage/html/index.html no navegador
-> ```
+# Relatório de cobertura
+flutter test --coverage
+genhtml coverage/lcov.info -o coverage/html
 
+## 🔧 Troubleshooting
+
+- Erro de build: Tente flutter clean seguido de flutter pub get.
+
+- CORS na Web: Use o Chrome com flags de segurança desabilitadas para testes locais.
+
+## 👤 Desenvolvedor
+
+- Kaique Cardeal — kaiquecardeal@outlook.com
+
+-  Projeto desenvolvido em 2026.
 ---
-
----
-
-
-## Exemplos de Uso
-
-### Buscar Pokémon
-
-Digite parte do nome na barra de busca para ver sugestões. Selecione para ver detalhes.
-
-![Busca com sugestão](assets/images/exemplo_busca.gif)
-
-### Comparar Pokémon
-
-Acesse a tela de compare no rodape do app, e procure dois pokemons para comparar.
-
-![Comparação](assets/images/exemplo_comparacao.gif)
-
----
-
----
-
-
-## Comandos Úteis
-
-```bash
-# Análise de código
-flutter analyze
-
-# Watch para geração de código
-dart run build_runner watch --delete-conflicting-outputs
-```
-
----
-## Troubleshooting
-
-- Se ocorrer erro de build após atualizar dependências, rode:
-	```bash
-	flutter clean
-	flutter pub get
-	dart run build_runner build --delete-conflicting-outputs
-	```
-- Para problemas de permissão em builds desktop, confira permissões de pastas.
-- Para problemas de CORS na web, use o Chrome com CORS desabilitado para testes locais.
-
----
-
----
-
-
-## FAQ
-
-**Como adicionar um novo recurso?**
-
-1. Crie o ViewModel, View e DataSource seguindo o padrão MVVM.
-2. Registre dependências em `dependency_injector.dart`.
-3. Escreva testes unitários e de widget.
-
-**Como rodar no emulador web?**
-
-```bash
-flutter run -d chrome
-```
-
-**Como gerar código dos models?**
-
-```bash
-dart run build_runner build --delete-conflicting-outputs
-```
-
-**Como atualizar dependências?**
-
-```bash
-flutter pub upgrade
-```
-
-**Como rodar só um teste específico?**
-
-```bash
-flutter test test/features/pokemon_list/viewmodels/pokemon_list_viewmodel_test.dart
-```
-
----
-
-
-## Contribuição
-
-1. Sempre escreva testes para novos recursos.
-2. Siga a arquitetura e padrões do projeto.
-3. Mantenha o README atualizado.
-4. Abra issues para bugs ou sugestões.
-5. Faça pull requests claros e bem documentados.
-
----
-## Agradecimentos
-
-- [PokeAPI](https://pokeapi.co/) — Dados de Pokémon
-- Comunidade Flutter Brasil
-- [RemixIcon](https://remixicon.com/) — Ícones
-
----
-
-## Desenvolvedor
-
-- Projeto desenvolvido por [Kaique Cardeal](https://github.com/kaiquecardeal) em 2026.
-- Contato: kaiquecardeal@outlook.com
