@@ -238,17 +238,9 @@ Digite parte do nome na barra de busca para ver sugestões. Selecione para ver d
 
 ### Comparar Pokémon
 
-Acesse:
-
-```
-/compare?pokemon1=pikachu&pokemon2=charizard
-```
+Acesse a tela de compare no rodape do app, e procure dois pokemons para comparar.
 
 ![Comparação](assets/images/exemplo_comparacao.gif)
-
-### Voltar ao topo
-
-<img src="assets/images/exemplo_voltar_topo.gif" alt="Voltar ao topo" width="300"/>
 
 ---
 
