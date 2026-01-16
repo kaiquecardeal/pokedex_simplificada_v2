@@ -70,55 +70,61 @@ lib/
 
 ## Diferenciais
 
-*- Código limpo, modular e testável
-*- Cobertura de testes unitários e de widget
-*- Acessibilidade real (labels, navegação por teclado, contraste)
-*- Performance otimizada (cache de imagens, lazy loading)
-*- Pronto para produção em Android, iOS, Web e Desktop
-*- Documentação e exemplos completos
-*- README sempre atualizado
+* Código limpo, modular e testável
+* Cobertura de testes unitários e de widget
+* Acessibilidade real (labels, navegação por teclado, contraste)
+* Performance otimizada (cache de imagens, lazy loading)
+* Pronto para produção em Android, iOS, Web e Desktop
+* Documentação e exemplos completos
+* README sempre atualizado
 
 ---
 
 🛠️ Instalação e Setup
 # 1. Clonar e Instalar
-*- Bash
+* Bash
 
-*- git clone [https://github.com/kaiquecardeal/pokedex_simplificada_v2.git](https://github.com/kaiquecardeal/pokedex_simplificada_v2.git)
-*- cd pokedex_simplificada_v2
-*- flutter pub get
+* git clone [https://github.com/kaiquecardeal/pokedex_simplificada_v2.git](https://github.com/kaiquecardeal/pokedex_simplificada_v2.git)
+* cd pokedex_simplificada_v2
+* flutter pub get
 
 # 2. Geração de Código
-*- Bash
+* Bash
 
-*- dart run build_runner build --delete-conflicting-outputs
+* dart run build_runner build --delete-conflicting-outputs
 
 # 3. Executar
-*- Bash
+* Bash
 
-*- flutter run # Selecione a plataforma (Chrome, Android, iOS, Desktop)
+* flutter run # Selecione a plataforma (Chrome, Android, iOS, Desktop)
+
+---
 
 ##🧪 Qualidade de Software
 
 # Testes unitários e de widget com 100% de cobertura.
-*- Bash
+* Bash
 
 # Executar testes
-*- flutter test
+* flutter test
 
 # Relatório de coberftura
-*- flutter test --coverage
-*- genhtml coverage/lcov.info -o coverage/html
+* flutter test --coverage
+* genhtml coverage/lcov.info -o coverage/html
+
+---
 
 ## 🔧 Troubleshooting
 
-*- Erro de build: Tente flutter clean seguido de flutter pub get.
+* Erro de build: Tente flutter clean seguido de flutter pub get.
 
-*- CORS na Web: Use o Chrome com flags de segurança desabilitadas para testes locais.
+* CORS na Web: Use o Chrome com flags de segurança desabilitadas para testes locais.
+
+---
 
 ## 👤 Desenvolvedor
 
-*- Kaique Cardeal — kaiquecardeal@outlook.com
+* Kaique Cardeal — kaiquecardeal@outlook.com
 
-*- Projeto desenvolvido em 2026.
+* Projeto desenvolvido em 2026.
 ---
