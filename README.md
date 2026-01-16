@@ -166,7 +166,7 @@ lib/
 ### Instalação rápida
 
 ```bash
-git clone https://github.com/seu-usuario/pokedex_simplificada_v2.git
+git clone https://github.com/kaiquecardeal/pokedex_simplificada_v2.git
 cd pokedex_simplificada_v2
 flutter pub get
 ```
