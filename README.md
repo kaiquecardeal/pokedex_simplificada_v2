@@ -11,7 +11,6 @@
 	<a href="https://flutter.dev/">
 		<img src="https://img.shields.io/badge/Flutter-3.10%2B-blue?logo=flutter" alt="Flutter"/>
 	</a>
-	<img src="https://img.shields.io/badge/license-MIT-green" alt="License: MIT"/>
 	<img src="https://img.shields.io/badge/platform-Android%20%7C%20iOS%20%7C%20Web%20%7C%20Desktop-blue" alt="Platform"/>
 	<img src="https://img.shields.io/badge/coverage-100%25-brightgreen" alt="Coverage"/>
 	<img src="https://img.shields.io/badge/tests-passing-brightgreen" alt="Tests Passing"/>
@@ -65,8 +64,6 @@
   <img src="assets/images/screen_detail.png" alt="Detalhe do Pokémon" width="200"/>
   <img src="assets/images/screen_compare.png" alt="Comparação de Pokémon" width="200"/>
 </p>
-
-> Coloque seus prints em `assets/images/` com os nomes sugeridos acima para exibição automática no README.
 
 #### Exemplo de fluxo:
 
