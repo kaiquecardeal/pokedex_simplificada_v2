@@ -319,8 +319,6 @@ flutter test test/features/pokemon_list/viewmodels/pokemon_list_viewmodel_test.d
 
 ---
 
----
-
 
 ## Contribuição
 
@@ -339,15 +337,7 @@ flutter test test/features/pokemon_list/viewmodels/pokemon_list_viewmodel_test.d
 
 ---
 
----
-
-## Licença
-
-MIT
-
----
-
-## Quem desenvolveu
+## Desenvolvedor
 
 - Projeto desenvolvido por [Kaique Cardeal](https://github.com/kaiquecardeal) em 2026.
 - Contato: kaiquecardeal@outlook.com
